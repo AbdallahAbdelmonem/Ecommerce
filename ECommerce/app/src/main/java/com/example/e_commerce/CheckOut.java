@@ -16,5 +16,8 @@ public class CheckOut extends AppCompatActivity {
     public void openHome(View view){
         Intent in=new Intent(this, HomePage.class);
         startActivity(in);
+        Intent intent = new Intent(this, NotificationService.class);
+        startService(intent);
+
     }
 }
